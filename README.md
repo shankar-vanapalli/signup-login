@@ -7,11 +7,23 @@ All information is stored in browser's local Storage. After successful login the
 ScreenShots
 ===========
 
+
+Login
+=====
 ![](Login.png)
-Login 
-![](Signup.png)
+
+
 SignUp 
-![](LocalStorage.png)
+======
+![](Signup.png)
+
+
 Local Storage Having credentials
-![](HomePage.png)
+================================
+![](LocalStorage.png)
+
+
 HomePage
+========
+![](HomePage.png)
+
