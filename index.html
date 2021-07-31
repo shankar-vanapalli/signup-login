@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link href="styles.css" rel="stylesheet">
+	<title>JavaScript Form</title>
+</head>
+
+<body>
+	<div class="container">
+		<div class="form-signup form-hidden" id="signUp">
+			<h1> Sign Up </h1>
+			<div class="txt_field">
+				<input type="text" name="FullName" id="signup_name" placeholder="Full Name" required/> </div>
+			<div class="txt_field">
+				<input type="email" name="Email" id="signup_email" placeholder="Email" required> </div>
+			<div class="txt_field">
+				<input type="password" name="Password" id="signup_pass" onkeyup='check();' placeholder="Password" required> </div>
+			<div class="txt_field">
+				<input type="password" name="Password" id="confirm_signup_pass" onkeyup='check();' placeholder="Confirm Password" required> <small id="message"></small> </div>
+			<input type="submit" id="submit" onclick="signup()" value="Sign Up">
+			<div class="signin_link"> Already have an account? <a href="#" class="signbtn" id="signInForm">Sign In</a> </div>
+		</div>
+		<!-- Login Form -->
+		<div class="form-signin " id="signIn">
+			<h1> Sign In </h1>
+			<div class="txt_field">
+				<input type="email" name="Email" id="login_email" placeholder="Email" /> </div>
+			<div class="txt_field">
+				<input type="password" name="Password" id="login_pass" placeholder="Password"> </div>
+			<input type="submit" onclick=" login()" value="Sign In">
+			<div class="signin_link"> Don't have an account? <a href="#" class="signbtn" id="signUpForm">Sign Up</a> </div>
+		</div>
+	</div>
+	<div class="welcome form-hidden">
+		<!-- <input type="button" class = "logoutBtn" name = "logout" value = "Logout">
+      <p>Shankar</p> -->
+	</div>
+	<script src="main.js"></script>
+</body>
+</html>
