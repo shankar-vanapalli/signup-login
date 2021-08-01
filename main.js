@@ -95,8 +95,7 @@ function logout() {
 }
 var check = function() {
 	if(document.getElementById('signup_pass').value == document.getElementById('confirm_signup_pass').value) {
-		document.getElementById('message').style.color = 'green';
-		document.getElementById('message').innerHTML = 'Matching';
+		document.getElementById('message').style.display = 'none';
 	} else {
 		document.getElementById('message').style.color = 'red';
 		document.getElementById('message').innerHTML = 'Not Matching';
